@@ -19,10 +19,31 @@ typically `%APPDATA%\Notepad++\plugins\config\PythonScript\scripts`.
 Functions
 ---------
 
--   **Format XML**
+-   **Format**
 
-    Pretty-print the XML in the current buffer.
+    -   **Format XML**
 
--   **Trim whitespace**
+        Pretty-print the XML in the current buffer.
 
-    Trim whitespace within specified elements.
+-   **Transform**
+
+    -   **Apply XSL transformation (preserve DTD)**
+
+        Apply an XSL transform script to the document, preserving the
+        original DTD.
+
+    -   **Apply XSL transformation**
+
+        Apply an XSL transform script to the document.
+
+-   **Trim**
+
+    -   **Trim whitespace**
+
+        Trim whitespace within specified elements.
+
+-   **Validate**
+
+    -   **Check against schema**
+
+        Validate the document against its schema.

@@ -6,10 +6,10 @@
       <dmIdent>
         <dmCode modelIdentCode="XMLNPP" systemDiffCode="A" systemCode="00" subSystemCode="0" subSubSystemCode="0" assyCode="00" disassyCode="00" disassyCodeVariant="A" infoCode="040" infoCodeVariant="A" itemLocationCode="D"/>
         <language languageIsoCode="en" countryIsoCode="CA"/>
-        <issueInfo issueNumber="000" inWork="01"/>
+        <issueInfo issueNumber="000" inWork="02"/>
       </dmIdent>
       <dmAddressItems>
-        <issueDate year="2019" month="09" day="16"/>
+        <issueDate year="2020" month="05" day="05"/>
         <dmTitle>
           <techName>xml-utils PythonScript interface for Notepad++</techName>
           <infoName>README</infoName>
@@ -76,15 +76,65 @@
           <randomList>
             <listItem>
               <para>
-                <emphasis>Format XML</emphasis>
+                <emphasis>Format</emphasis>
               </para>
-              <para>Pretty-print the XML in the current buffer.</para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Format XML</emphasis>
+                    </para>
+                    <para>Pretty-print the XML in the current buffer.</para>
+                  </listItem>
+                </randomList>
+              </para>
             </listItem>
             <listItem>
               <para>
-                <emphasis>Trim whitespace</emphasis>
+                <emphasis>Transform</emphasis>
               </para>
-              <para>Trim whitespace within specified elements.</para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para><emphasis>Apply XSL transformation (preserve DTD)</emphasis></para>
+                    <para>Apply an XSL transform script to the document, preserving the original DTD.</para>
+                  </listItem>
+                  <listItem>
+                    <para><emphasis>Apply XSL transformation</emphasis></para>
+                    <para>Apply an XSL transform script to the document.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>Trim</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Trim whitespace</emphasis>
+                    </para>
+                    <para>Trim whitespace within specified elements.</para>
+                  </listItem>
+                </randomList>
+              </para>
+            </listItem>
+            <listItem>
+              <para>
+                <emphasis>Validate</emphasis>
+              </para>
+              <para>
+                <randomList>
+                  <listItem>
+                    <para>
+                      <emphasis>Check against schema</emphasis>
+                    </para>
+                    <para>Validate the document against its schema.</para>
+                  </listItem>
+                </randomList>
+              </para>
             </listItem>
           </randomList>
         </para>
