@@ -1,6 +1,7 @@
 import os
 import subprocess
 import Npp
+import ConfigParser
 
 def main():
 	scriptdir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -9,6 +10,15 @@ def main():
 	CREATE_NO_WINDOW=0x08000000
 
 	args = [xml_format]
+
+        config = ConfigParser.RawConfigParser()
+        config.read(scriptdir + "\\settings.ini")
+
+        if config.get("Format", "IndentAll") == "yes":
+            args.append("-I")
+
+        if config.get("Format", "WhitespaceOnlyElemsAreEmpty") == "yes":
+            args.append("-w")
 
 	p = subprocess.Popen(
 		args,
